@@ -3,30 +3,33 @@
 <head>
   	<meta charset="utf-8" />
   	<title>Sweet Feedback Example</title>
+	
 	<link rel="stylesheet" media="screen" href="sweetfeedback.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/noisy/1.0/jquery.noisy.min.js"></script>
-	<script type="text/javascript" src="sweetfeedback.js"></script>
+	<!-- Jquery loaded from google but with a fallback to local file if you won't have internet (Thanks: h5bp.com ) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 	
-	<!--[if IE]> 
+	<script src="js/sweetfeedback.js"></script>
+	
+	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
-<section id="feedback">
-	<div class="feedback info sr">
-		<p class="">This is your message to inform your user about something.</p>
+<section class="feedback">
+	<div class="message info sr">
+		<p class="">This is the message to inform your user about something.</p>
 	</div>
-	<div class="feedback warning sr">
-		<p>This is your message to warning your user about something.</p>
+	<div class="message warning sr">
+		<p>This is the message to warning your user about something.</p>
 	</div>
-	<div class="feedback error sr">
-		<p>This is your message to explain about something that went wrong.</p>
+	<div class="message error sr">
+		<p>This is the message to explain about something that went wrong.</p>
 	</div>
-	<div class="feedback success sr">
-		<p>This is your message to tell your user that something went right!</p>
+	<div class="message success sr">
+		<p>This is the message to tell your user that something went right!</p>
 	</div>
 </section><!-- End #feedback -->
 	

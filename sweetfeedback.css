@@ -1,9 +1,16 @@
-body {overflow: hidden;}
+/****************************************/
+/* External styles */
+/*You can remove it when use
+SweetFeedback in your project*/
+/****************************************/
+body {background: url(images/noise.png) repeat #d6d6d6;}
 
 /****************************************/
 /* Feedbacks */
 /****************************************/
-.feedback {
+.feedback {overflow-x: hidden;}
+
+.feedback .message {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	width: auto;
@@ -19,7 +26,7 @@ body {overflow: hidden;}
 	overflow: hidden;
 }
 
-.feedback.warning {
+.feedback .message.warning {
 	border-color: #bbb90c;
 	background: #8c8a01;
 	background: url(images/iconWarning.png) 12px center no-repeat,
@@ -36,7 +43,7 @@ body {overflow: hidden;}
 				-moz-linear-gradient(top, #fcfb87 0%, #e8e87d 100%);
 }
 
-.feedback.error {
+.feedback .message.error {
 	border-color: #fc5858;
 	background: #F0B7B7;
 	background: url(images/iconError.png) 12px center no-repeat,
@@ -53,7 +60,7 @@ body {overflow: hidden;}
 				-moz-linear-gradient(top, #fbbfbf 0%, #e8b0b0 100%);
 }
 
-.feedback.success {
+.feedback .message.success {
 	border-color: #09c600;
 	background: #95e391;
 	background: url(images/iconSuccess.png) 12px center no-repeat,
@@ -70,7 +77,7 @@ body {overflow: hidden;}
 				-moz-linear-gradient(top, #95e391 0%, #89d186 100%);
 }
 
-.feedback.info {
+.feedback .message.info {
 	border-color: #198fb0;
 	background: #95e391;
 	background: url(images/iconInfo.png) 12px center no-repeat,
@@ -87,20 +94,16 @@ body {overflow: hidden;}
 				-moz-linear-gradient(top, #9be5fa 0%, #8fd3e7 100%);
 }
 
-.feedback p {
+.feedback .message p {
 	margin: 0;
+	cursor: default;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-
 
 /****************************************/
 /* Animations */
 /****************************************/
-.sd,
-.su,
-.sl,
-.sr {position: relative;}
-
+.sd, .su, .sl, .sr {position: relative;}
 
 /****************************************/
 /* WebKit Animations */
@@ -128,3 +131,12 @@ body {overflow: hidden;}
 @-moz-keyframes su { from{top:  200px;} to{top: 0;} }
 @-moz-keyframes sl { from{left: -500px;} to{left: 0;} }
 @-moz-keyframes sr { from{left: 1000px;} to{left: 0;} }
+
+/****************************************/
+/* Experimental animations */
+/****************************************/
+.feedback .message:hover {
+	-moz-transition: box-shadow 0.3s ease-in;
+	box-shadow: 0 0px 30px transparent,
+				inset 0 1px 1px rgba(255, 255, 255, 0.75);
+}
