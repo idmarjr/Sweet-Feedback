@@ -1,17 +1,11 @@
-/****************************************/
-/* External styles */
-/*You can remove it when use
-SweetFeedback in your project*/
-/****************************************/
-body {background: url(../images/noise.png) repeat #d6d6d6;}
-
-/****************************************/
+/******************************************************************************/
 /* Feedbacks */
-/****************************************/
+/******************************************************************************/
 .feedback {overflow-x: hidden;}
 
 .feedback .message {
-	font-family: 'Lato', sans-serif;
+	position: relative;
+	font-family: sans-serif;
 	font-weight: 300;
 	width: auto;
 	padding: 12px 12px 12px 35px;
@@ -101,14 +95,13 @@ body {background: url(../images/noise.png) repeat #d6d6d6;}
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/****************************************/
+/******************************************************************************/
 /* Animations */
-/****************************************/
-.sd, .su, .sl, .sr {position: relative;}
+/******************************************************************************/
 
-/****************************************/
+/***************************************************************/
 /* WebKit Animations */
-/****************************************/
+/***************************************************************/
 .sd {-webkit-animation: sd 1s ease;}
 .su {-webkit-animation: su 1s ease;}
 .sl {-webkit-animation: sl 1s ease;}
@@ -120,9 +113,9 @@ body {background: url(../images/noise.png) repeat #d6d6d6;}
 @-webkit-keyframes sr { from{left: 1000px;} to{left: 0;} }
 
 
-/****************************************/
+/***************************************************************/
 /* Gecko Animations */
-/****************************************/
+/***************************************************************/
 .sd {-moz-animation: sd 1s ease;}
 .su {-moz-animation: su 1s ease;}
 .sl {-moz-animation: sl 1s ease;}
@@ -133,9 +126,9 @@ body {background: url(../images/noise.png) repeat #d6d6d6;}
 @-moz-keyframes sl { from{left: -500px;} to{left: 0;} }
 @-moz-keyframes sr { from{left: 1000px;} to{left: 0;} }
 
-/****************************************/
+/***************************************************************/
 /* Experimental animations */
-/****************************************/
+/***************************************************************/
 .feedback .message:hover {
 	-moz-transition: box-shadow 0.3s ease-in;
 	box-shadow: 0 0px 30px transparent,
