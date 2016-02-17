@@ -1,6 +1,6 @@
 {
   "name": "sweet-feedback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple HTML5 + CSS3 animated feedback framework",
   "main": "index.js",
   "scripts": {
