@@ -104,13 +104,13 @@
 /***************************************************************/
 .sd {-webkit-animation: sd 1s ease;}
 .su {-webkit-animation: su 1s ease;}
-.sl {-webkit-animation: sl 1s ease;}
 .sr {-webkit-animation: sr 1s ease;}
+.sl {-webkit-animation: sl 1s ease;}
 
 @-webkit-keyframes sd { from{top: -200px;} to{top: 0;} }
 @-webkit-keyframes su { from{top:  200px;} to{top: 0;} }
-@-webkit-keyframes sl { from{left: -500px;} to{left: 0;} }
-@-webkit-keyframes sr { from{left: 1000px;} to{left: 0;} }
+@-webkit-keyframes sr { from{left: -500px;} to{left: 0;} }
+@-webkit-keyframes sl { from{left: 1000px;} to{left: 0;} }
 
 
 /***************************************************************/
@@ -118,13 +118,13 @@
 /***************************************************************/
 .sd {-moz-animation: sd 1s ease;}
 .su {-moz-animation: su 1s ease;}
-.sl {-moz-animation: sl 1s ease;}
-.sr {-moz-animation: sr 1s ease;}
+.sl {-moz-animation: sr 1s ease;}
+.sr {-moz-animation: sl 1s ease;}
 
 @-moz-keyframes sd { from{top: -200px;} to{top: 0;} }
 @-moz-keyframes su { from{top:  200px;} to{top: 0;} }
-@-moz-keyframes sl { from{left: -500px;} to{left: 0;} }
-@-moz-keyframes sr { from{left: 1000px;} to{left: 0;} }
+@-moz-keyframes sr { from{left: -500px;} to{left: 0;} }
+@-moz-keyframes sl { from{left: 1000px;} to{left: 0;} }
 
 /***************************************************************/
 /* Experimental animations */
